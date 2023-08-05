@@ -88,7 +88,25 @@ nav .container {
   color: #fff;
 }
 
+.ded{
+    background-color: #fff;
+}
+
 @media (max-width: 768px) {
+  header {
+    height: 100%;
+  }
+  .hero .container {
+    height: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+  }
+  .hero-text,
+  .hero-img-wrapper {
+    width: 100%;
+  }
+
   /* header{
         height: auto;
     } */
@@ -111,6 +129,7 @@ nav .container {
     flex-direction: column;
     padding-top: 40px;
     font-size: 1.5em;
+    background-color: #1c1e53;
   }
   .menu-btn {
     display: block;
