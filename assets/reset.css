@@ -13,6 +13,10 @@ a {
 ul {
   list-style-type: none;
 }
+button{
+  border: none;
+  background-color: transparent;
+}
 .flex {
   display: flex;
 }
@@ -35,9 +39,16 @@ ul {
 .gap {
   gap: 30px;
 }
-button {
+.button {
   border-radius: 41px;
   border: 2px solid rgba(244, 246, 252, 0.2);
   cursor: pointer;
   transition: .3s all ease;
+}
+
+@media (max-width: 768px) {
+  .container{
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
