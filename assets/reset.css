@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lexend+Deca:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lexend+Deca:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lexend+Deca:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ a {
 ul {
   list-style-type: none;
 }
-button{
+button {
   border: none;
   background-color: transparent;
 }
@@ -44,12 +44,25 @@ button{
   border-radius: 41px;
   border: 2px solid rgba(244, 246, 252, 0.2);
   cursor: pointer;
-  transition: .3s all ease;
+  transition: 0.3s all ease;
 }
-
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+}
 @media (max-width: 768px) {
+  .container {
+    max-width: 568px;
+  }
+}
+@media (max-width: 600px) {
   .container{
-    max-width: 700px;
-    margin: 0 auto;
+    max-width: 300px;
   }
 }
