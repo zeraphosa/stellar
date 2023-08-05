@@ -49,30 +49,13 @@ nav .container {
   color: #fff;
 }
 .hero-text h1 {
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 74px;
   padding-bottom: 20px;
 }
 .hero-text p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
   padding-bottom: 30px;
 }
 .hero-text a {
   color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 28px;
-}
-.hero-text a:hover .icon {
-  padding-left: 20px;
-}
-.hero-text .icon {
-  font-size: 14px;
-  padding-left: 10px;
-  transition: 0.3s all ease;
 }
 .hero-btn {
   background: #fcd980;
@@ -91,28 +74,12 @@ nav .container {
   width: 100%;
   height: 100%;
 }
-
-.ded {
-  background-color: #fff;
-}
+/* HERO END */
 
 @media (max-width: 768px) {
   header {
     height: 100%;
   }
-  .hero .container {
-    height: 100%;
-    flex-direction: column;
-    padding: 40px;
-    gap: 30px;
-  }
-  .hero-text,
-  .hero-img-wrapper {
-    width: 100%;
-  }
-  /* header{
-        height: auto;
-    } */
   /* NAVBAR START */
   nav .container {
     position: relative;
@@ -139,28 +106,29 @@ nav .container {
     font-size: 1.3em;
   }
   /* NAVBAR END */
+
+  /* HERO START */
+  .hero .container {
+    height: 100%;
+    flex-direction: column;
+    padding: 40px;
+    gap: 30px;
+  }
+  .hero-text,
+  .hero-img-wrapper {
+    width: 100%;
+  }
+  /* HERO END */
 }
 @media (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 34px;
-    line-height: 40px;
-    padding-bottom: 20px;
-  }
-  .hero-text p {
-    font-size: 13px;
-    line-height: 25px;
-    padding-bottom: 30px;
-  }
-  .hero-btn-group{
+  /* HERO START */
+  .hero-btn-group {
     flex-direction: column;
-  }
-  .hero-text a {
-    font-size: 13px;
-    line-height: 28px;
   }
   .hero-btn {
     padding: 13px 34px;
     font-size: 16px;
     line-height: 32px;
   }
+  /* HERO END */
 }

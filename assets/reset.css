@@ -18,6 +18,26 @@ button {
   border: none;
   background-color: transparent;
 }
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+h1 {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 74px;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 64px;
+}
+h5 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
 .flex {
   display: flex;
 }
@@ -46,6 +66,19 @@ button {
   cursor: pointer;
   transition: 0.3s all ease;
 }
+.a-arrow {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.a-arrow:hover .icon {
+  padding-left: 20px;
+}
+.a-arrow .icon {
+  font-size: 14px;
+  padding-left: 10px;
+  transition: 0.3s all ease;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 1000px;
@@ -62,7 +95,24 @@ button {
   }
 }
 @media (max-width: 600px) {
-  .container{
+  .container {
     max-width: 300px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  h1 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  h2 {
+    /* bilinmir */
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .a-arrow {
+    font-size: 13px;
+    line-height: 28px;
   }
 }
