@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lexend+Deca:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-col {
+  flex-direction: column;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.gap {
+  gap: 30px;
+}
+button {
+  border-radius: 41px;
+  border: 2px solid rgba(244, 246, 252, 0.2);
+  cursor: pointer;
+  transition: .3s all ease;
+}

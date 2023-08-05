@@ -1,0 +1,34 @@
+header {
+  background: #1c1e53;
+  width: 100%;
+  height: calc(760px - 92px);
+}
+nav .container {
+  width: 100%;
+  height: 92px;
+}
+#logo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #fff;
+}
+.menu-link {
+  color: #bbbbcb;
+  font-weight: 500;
+}
+.menu-link:hover,
+.menu-link.active {
+  color: #fff;
+}
+.contact-btn {
+  padding: 13px 35px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
+}
+.contact-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
