@@ -46,7 +46,7 @@ testimonialtext.innerHTML = `"${content[0].text}"`;
 testimonialusername.innerHTML = `${content[0].user}`;
 testimonialusertitle.innerHTML = `${content[0].title}`;
 
-setInterval(changetestimonial, 2000);
+setInterval(changetestimonial, 4000);
 function changetestimonial(y = 1) {
   x += y;
   if (x > content.length) x = 0;
