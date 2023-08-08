@@ -2,7 +2,6 @@
   background-color: #f4f6fc;
 }
 .features .container {
-  border: 1px solid red;
   width: 100%;
   height: auto;
   padding: 120px 0;
@@ -28,13 +27,18 @@
   font-size: 25px;
   color: #2405f2;
 }
+.features-header p,
+.features-header h2,
+.feature-card h6,
+.feature-card p {
+  color: #282938;
+}
 
 @media (max-width: 1200px) {
   .features-cards {
     grid-template-columns: repeat(2, 380px);
   }
 }
-
 @media (max-width: 768px) {
   .features-cards {
     grid-template-columns: repeat(1, 380px);
