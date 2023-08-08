@@ -15,3 +15,52 @@
   width: 65%;
   gap: 50px;
 }
+.testimonial-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  background-color: transparent;
+  color: rgb(40, 41, 56, 0.7);
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.testimonial-btn:hover {
+  color: #fff;
+  background-color: #5239fa;
+}
+.testimonial-btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonial-header h3,
+.testimonial-slider h5 {
+  color: #282938;
+}
+.testimonial-header p {
+  color: rgb(40, 41, 56, 0.7);
+}
+.testimonial-user {
+  gap: 10px;
+}
+.testimonial-user img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial-user-name {
+  color: #282938;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.testimonial-user-title {
+  color: #282938;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 28px;
+}

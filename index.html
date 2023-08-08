@@ -160,12 +160,18 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
         </div>
         <div class="testimonial-slider flex flex-col">
-          <h5 class="testimonial-text">"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h5>
+          <h5 id="testimonialtext">"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus."</h5>
           <div class="flex align-center justify-between">
-            <div class="testimonial-user">Jerry</div>
+            <div class="testimonial-user flex align-center">
+              <img src="./assets/img/user.png" alt="user-1">
+              <div>
+                <p id="testimonialusername" class="testimonial-user-name">Jenny Wilson</p>
+                <p id="testimonialusertitle" class="testimonial-user-title">Vice President</p>
+              </div>
+            </div>
             <div>
-              <button><i class="fa-solid fa-chevron-left"></i></button>
-              <button><i class="fa-solid fa-chevron-right"></i></button>
+              <button class="testimonial-btn" onclick="changetestimonial(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="testimonial-btn" onclick="changetestimonial(1)"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
           </div>
         </div>
