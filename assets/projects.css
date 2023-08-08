@@ -4,7 +4,6 @@
 .projects .container {
   width: 100%;
   padding: 120px 0;
-  border: 1px solid red;
 }
 .project-card-left {
   width: 60%;
@@ -63,24 +62,17 @@
 }
 
 @media (max-width: 768px) {
-    .project-header{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .project-cards{
-        flex-direction: column;
-    }
-    .project-card-left {
-        width: 100%;
-        /* height: 630px; */
-      }
-      .project-card-right {
-        width: 100%;
-      }
-}
-@media (max-width: 600px) {
-  .workflow-card-wrapper {
-    grid-template-columns: 100%;
-    gap: 50px;
+  .project-header {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .project-cards {
+    flex-direction: column;
+  }
+  .project-card-left {
+    width: 100%;
+  }
+  .project-card-right {
+    width: 100%;
   }
 }

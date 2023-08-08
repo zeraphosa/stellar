@@ -1,0 +1,25 @@
+.features {
+  background-color: #f4f6fc;
+}
+.features .container {
+  border: 1px solid red;
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+}
+.features-header {
+  width: 50%;
+  text-align: center;
+}
+.features-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-template-rows: repeat(2, 300px);
+  justify-content: center;
+  gap: 15px;
+  
+}
+.feature-card {
+  border: 1px solid red;
+}
