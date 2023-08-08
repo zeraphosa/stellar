@@ -45,10 +45,12 @@
 .testimonial-user {
   gap: 10px;
 }
-.testimonial-user img {
+#testimonialimg {
   width: 60px;
   height: 60px;
-  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 50%;
 }
 .testimonial-user-name {
