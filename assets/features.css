@@ -18,8 +18,30 @@
   grid-template-rows: repeat(2, 300px);
   justify-content: center;
   gap: 15px;
-  
 }
 .feature-card {
-  border: 1px solid red;
+  padding: 50px 40px;
+  background-color: #fff;
+  gap: 10px;
+}
+.feature-card i {
+  font-size: 25px;
+  color: #2405f2;
+}
+
+@media (max-width: 1200px) {
+  .features-cards {
+    grid-template-columns: repeat(2, 380px);
+  }
+}
+
+@media (max-width: 768px) {
+  .features-cards {
+    grid-template-columns: repeat(1, 380px);
+  }
+}
+@media (max-width: 600px) {
+  .features-cards {
+    grid-template-columns: repeat(1, 100%);
+  }
 }
