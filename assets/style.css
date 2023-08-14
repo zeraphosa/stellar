@@ -214,8 +214,77 @@ nav .container {
 .feature-card p {
   color: #282938;
 }
-
 /* FEATURES END */
+
+/* TESTIMONIALS START */
+.testimonials {
+  background-color: rgb(244, 246, 252, 0.5);
+}
+.testimonials .container {
+  width: 100%;
+  height: 506px;
+  padding: 130px 0;
+}
+.testimonial-header {
+  width: 30%;
+  gap: 10px;
+}
+.testimonial-slider {
+  width: 65%;
+  gap: 50px;
+}
+.testimonial-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+  background-color: transparent;
+  color: rgb(40, 41, 56, 0.7);
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.testimonial-btn:hover {
+  color: #fff;
+  background-color: #5239fa;
+}
+.testimonial-btn i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonial-header h3,
+.testimonial-slider h5 {
+  color: #282938;
+}
+.testimonial-header p {
+  color: rgb(40, 41, 56, 0.7);
+}
+.testimonial-user {
+  gap: 10px;
+}
+#testimonialimg {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+.testimonial-user-name {
+  color: #282938;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.testimonial-user-title {
+  color: #282938;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 28px;
+}
+/* TESTIMONIALS END */
 
 @media (max-width: 1200px) {
   /* FEATURES START */
@@ -303,6 +372,19 @@ nav .container {
     grid-template-columns: repeat(1, 380px);
   }
   /* FEATURES END */
+
+  /* TESTIMONIALS START */
+  .testimonials .container {
+    height: auto;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .testimonial-header,
+  .testimonial-slider {
+    width: 100%;
+    text-align: center;
+  }
+  /* TESTIMONIALS END */
 }
 @media (max-width: 600px) {
   /* HERO START */
@@ -328,4 +410,11 @@ nav .container {
     grid-template-columns: repeat(1, 100%);
   }
   /* FEATURES END */
+
+  /* TESTIMONIALS START */
+  .testimonial-user-name {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* TESTIMONIALS END */
 }
