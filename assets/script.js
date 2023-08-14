@@ -57,60 +57,66 @@ function changetestimonial(y = 1) {
 }
 
 // FAQ TOGGLE
-document.addEventListener("DOMContentLoaded", () => {
-  const faqcontent = document.getElementById("faqcontent");
-  const faqitem = document.getElementById("faqitem");
-  const faqtext = document.getElementById("faqtext");
-  let faqcode = "";
-  const faqdata = [
-    {
-      id: 1,
-      head: "How much time does it take?",
-      p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 2,
-      head: "What is your class naming convention?",
-      p: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 3,
-      head: "How do you communicate?",
-      p: "33 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 4,
-      head: "I have a bigger project. Can you handle it?",
-      p: "44 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      id: 5,
-      head: "What is your class naming convention?",
-      p: "55 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-  ];
+const faqcontent = document.getElementById("faqcontent");
+let faqcode = "";
 
-  for (let f = 0; f < faqdata.length; f++) {
-    faqcode += `
-      <div id="faqitem" class="faq-item flex gap">
+const faqdata = [
+  {
+    id: 1,
+    head: "How much time does it take?",
+    p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 2,
+    head: "What is your class naming convention?",
+    p: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 3,
+    head: "How do you communicate?",
+    p: "33 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 4,
+    head: "I have a bigger project. Can you handle it?",
+    p: "44 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 5,
+    head: "What is your class naming convention?",
+    p: "55 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
+
+for (let f = 0; f < faqdata.length; f++) {
+  faqcode += `
+      <div class="faq-item flex gap" onclick="toggle(${f})">
         <span>0${faqdata[f].id}</span>
         <div class="flex flex-col">
           <div class="flex align-center justify-between">
             <h6>${faqdata[f].head}</h6>
-            <i class="fa-solid fa-plus"></i>
+            <i class="toggle-icon fa-solid ${faqdata[f].expanded ? 'fa-close' : 'fa-plus'}"></i>
           </div>
-          <p id="faqtext"></p>
+          <p class="faqtext" style="${faqdata[f].expanded ? 'display:block;' : 'display:none;'}">${faqdata[f].p}</p>
         </div>
       </div>
   `;
-    faqitem.addEventListener("toggle", () => {
-      
-    });
-  }
-  faqcontent.innerHTML = faqcode;
+}
+function toggle(id) {
+  faqdata[id].expanded = !faqdata[id].expanded;
 
-  const faqtext = document.getElementById("faqtext");
-  faqitem.addEventListener("click", () => {
-    faqtext.innerHTML = "";
-  });
-});
+  const iconElement = document.querySelector(`.faq-item:nth-child(${id + 1}) .toggle-icon`);
+  const textElement = document.querySelector(`.faq-item:nth-child(${id + 1}) .faqtext`);
+  
+  if (faqdata[id].expanded) {
+    iconElement.classList.remove('fa-plus');
+    iconElement.classList.add('fa-close');
+    textElement.style.display = 'block';
+  } else {
+    iconElement.classList.remove('fa-close');
+    iconElement.classList.add('fa-plus');
+    textElement.style.display = 'none';
+  }
+}
+
+faqcontent.innerHTML = faqcode;
