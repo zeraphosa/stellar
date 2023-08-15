@@ -8,7 +8,7 @@ nav .container {
   width: 100%;
   height: 92px;
 }
-#logo {
+.logo {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.4em;
