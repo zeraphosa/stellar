@@ -2,7 +2,6 @@
   background-color: #1c1e53;
 }
 .footer-top .container {
-  padding: 0 96px;
   padding-top: 96px;
   width: 100%;
   height: auto;
@@ -16,6 +15,7 @@
 }
 .footer-top-right {
   width: 40%;
+  padding-right: 96px;
 }
 .footer-card {
   height: 95px;
@@ -46,19 +46,44 @@
 .footer-header p {
   color: rgb(244, 246, 252, 0.8);
 }
+
+footer {
+  background-color: #fff;
+}
+footer .container {
+  height: 92px;
+}
+.footer-links {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .footer-top .container {
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 96px;
   }
   .footer-top-left,
   .footer-top-right {
     width: 100%;
   }
+  .footer-top-right {
+    padding-right: 0;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .footer-links {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 @media (max-width: 600px) {
-  .footer-top .container {
-    padding: 0;
-    padding-top: 96px;
-  }
 }
