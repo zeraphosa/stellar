@@ -1,0 +1,35 @@
+.blog .container {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+}
+.blog-card {
+  width: 30%;
+  gap: 16px;
+}
+.blog-card img {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+.blog-card span {
+  color: #282938;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.blog-card h6,
+.blog-card p,
+.blog-card a {
+  color: #282938;
+}
+@media (max-width: 768px) {
+  .blog-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog-card{
+    width: 100%;
+    gap: 5px;
+  }
+}
