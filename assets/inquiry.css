@@ -1,5 +1,6 @@
 .inquiry {
   background-color: #fff;
+  margin-bottom: 40px;
 }
 .inquiry .container {
   width: 100%;
@@ -55,4 +56,24 @@
 .inquiry-buttons a {
   color: #fff;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .inquiry .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .inquiry-left{
+    display: none;
+  }
+  .inquiry-right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .inquiry-right{
+    padding: 20px;
+  }
+  .inquiry-buttons button {
+    padding: 15px;
+  }
 }
