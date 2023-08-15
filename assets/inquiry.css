@@ -28,9 +28,31 @@
 }
 .inquiry-right {
   width: 45%;
-  background: #1C1E53;
+  background: #1c1e53;
   padding: 0 96px;
   padding-top: 96px;
   padding-bottom: 46px;
   color: #fff;
+}
+.inquiry-inputs {
+  gap: 16px;
+}
+.inquiry-inputs input {
+  height: 44px;
+  padding: 0 15px;
+  outline: none;
+  background-color: transparent;
+}
+.inquiry-buttons button {
+  padding: 15px 51px;
+  background-color: #fcd980;
+  color: #1b1c2b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.inquiry-buttons a {
+  color: #fff;
+  text-align: center;
 }
