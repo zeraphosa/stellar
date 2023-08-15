@@ -22,18 +22,43 @@
   width: 100%;
   background-color: #fcd980;
 }
-.footer-card > div{
-    color: #282938;
+.footer-card > div {
+  color: #282938;
 }
-.footer-top .social-links{
-    gap: 20px;
+.footer-top .social-links {
+  gap: 20px;
 }
-.footer-top .social-link{
-    color: #fff;
-    font-size: 16px;
+.footer-top .social-link {
+  color: #fff;
+  font-size: 16px;
 }
-.footer-header{
-    display: flex;
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-header span {
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.footer-header p {
+  color: rgb(244, 246, 252, 0.8);
+}
+@media (max-width: 768px) {
+  .footer-top .container {
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
+  }
+  .footer-top-left,
+  .footer-top-right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .footer-top .container {
+    padding: 0;
+    padding-top: 96px;
+  }
 }
