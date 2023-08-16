@@ -1,9 +1,12 @@
 // MENU BUTTON TOGGLE
 const menubtn = document.getElementById("menubtn");
 const menu = document.getElementById("menu");
+const headernav = document.getElementById("headernav");
 
 menubtn.addEventListener("click", () => {
   menu.classList.toggle("mb-menu");
+  if (headernav.style.height == "92px") headernav.style.height = "100vh";
+  else headernav.style.height = "92px";
 });
 
 // PROJECT OVERLAY SIZE
