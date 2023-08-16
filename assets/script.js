@@ -21,20 +21,20 @@ const testimonialusertitle = document.getElementById("testimonialusertitle");
 const testimonialimg = document.getElementById("testimonialimg");
 const content = [
   {
-    text: "The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.",
-    user: "Jenny Wilson",
+    text: "Reliable partner. Their expertise propelled our startup to new heights.",
+    user: "Emily Lawson",
     title: "Vice President",
     src: "./assets/img/user-1.png",
   },
   {
-    text: "Euismod faucibus turpis eu gravida mi. They understand our product and are able to add new features with a great focus.",
-    user: "John Doe",
+    text: "Incredible work! Exceeded expectations and boosted our online presence significantly.",
+    user: "Sophia Mitchell",
     title: "Developer at Microsoft",
     src: "./assets/img/user-2.jpg",
   },
   {
-    text: "Faucibus turpis eu gravida mi. aliquam sed faucib turpisThey understand our product and are able to add.",
-    user: "Daron William",
+    text: "Impressed by their dedication. Transformed our vision into a stunning reality.",
+    user: "Alexander Bennett",
     title: "Specialist",
     src: "./assets/img/user-3.jpg",
   },
@@ -64,27 +64,22 @@ const faqdata = [
   {
     id: 1,
     head: "How much time does it take?",
-    p: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    p: "Project durations vary based on complexity. We provide tailored estimates after discussing your specific requirements.",
   },
   {
     id: 2,
     head: "What is your class naming convention?",
-    p: "22 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    p: "Our convention follows a structured format, enhancing code readability and maintainability across projects.",
   },
   {
     id: 3,
     head: "How do you communicate?",
-    p: "33 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    p: "We prioritize clear and timely communication via email, calls, and project management tools, ensuring seamless collaboration.",
   },
   {
     id: 4,
     head: "I have a bigger project. Can you handle it?",
-    p: "44 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    id: 5,
-    head: "What is your class naming convention?",
-    p: "55 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    p: "Absolutely! We're equipped to handle projects of all sizes, adapting our approach to meet your project's scope and needs.",
   },
 ];
 
@@ -95,9 +90,9 @@ for (let f = 0; f < faqdata.length; f++) {
         <div class="flex flex-col">
           <div class="flex align-center justify-between">
             <h6>${faqdata[f].head}</h6>
-            <i class="toggle-icon fa-solid ${faqdata[f].expanded ? 'fa-close' : 'fa-plus'}"></i>
+            <i class="toggle-icon fa-solid ${faqdata[f].expanded ? "fa-close" : "fa-plus"}"></i>
           </div>
-          <p class="faqtext" style="${faqdata[f].expanded ? 'display:block;' : 'display:none;'}">${faqdata[f].p}</p>
+          <p class="faqtext" style="${faqdata[f].expanded ? "display:block;" : "display:none;"}">${faqdata[f].p}</p>
         </div>
       </div>
   `;
@@ -107,15 +102,15 @@ function toggle(id) {
 
   const iconElement = document.querySelector(`.faq-item:nth-child(${id + 1}) .toggle-icon`);
   const textElement = document.querySelector(`.faq-item:nth-child(${id + 1}) .faqtext`);
-  
+
   if (faqdata[id].expanded) {
-    iconElement.classList.remove('fa-plus');
-    iconElement.classList.add('fa-close');
-    textElement.style.display = 'block';
+    iconElement.classList.remove("fa-plus");
+    iconElement.classList.add("fa-close");
+    textElement.style.display = "block";
   } else {
-    iconElement.classList.remove('fa-close');
-    iconElement.classList.add('fa-plus');
-    textElement.style.display = 'none';
+    iconElement.classList.remove("fa-close");
+    iconElement.classList.add("fa-plus");
+    textElement.style.display = "none";
   }
 }
 
