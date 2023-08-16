@@ -286,6 +286,205 @@ nav .container {
 }
 /* TESTIMONIALS END */
 
+/* FAQ START */
+.faq {
+  background-color: #fff;
+}
+.faq .container {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+}
+.faq-header {
+  width: 30%;
+  gap: 10px;
+}
+.faq-content {
+  width: 65%;
+}
+.faq-item {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 2px solid #ececf1;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+.faq-item p {
+  padding-bottom: 30px;
+}
+.faq-item span {
+  color: #2405f2;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.faq-item > div {
+  width: 100%;
+  gap: 10px;
+}
+/* FAQ END */
+
+/* INQUIRY START */
+.inquiry {
+  background-color: #fff;
+}
+.inquiry .container {
+  width: 100%;
+  height: 690px;
+}
+.inquiry-left {
+  width: 55%;
+  background: url("./img/inquirybg.jpg"), lightgray 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.inquiry-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(28, 30, 83, 0.5);
+  padding: 96px;
+}
+.inquiry-overlay h1 {
+  margin-bottom: 24px;
+}
+.inquiry-right {
+  width: 45%;
+  background: #1c1e53;
+  padding: 0 96px;
+  padding-top: 96px;
+  padding-bottom: 46px;
+  color: #fff;
+}
+.inquiry-inputs {
+  gap: 16px;
+}
+.inquiry-inputs input {
+  height: 44px;
+  padding: 0 15px;
+  outline: none;
+  background-color: transparent;
+}
+.inquiry-buttons button {
+  padding: 15px 51px;
+  background-color: #fcd980;
+  color: #1b1c2b;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.inquiry-buttons a {
+  color: #fff;
+  text-align: center;
+}
+/* INQUIRY END */
+
+/* BLOG START */
+.blog .container {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+}
+.blog-card {
+  width: 30%;
+  gap: 16px;
+}
+.blog-card img {
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+}
+.blog-card span {
+  color: #282938;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.blog-card h6,
+.blog-card p,
+.blog-card a {
+  color: #282938;
+}
+/* BLOG END */
+
+/* FOOTER START */
+.footer-top {
+  background-color: #1c1e53;
+}
+.footer-top .container {
+  padding-top: 96px;
+  width: 100%;
+  height: auto;
+  /* height: 400px; */
+  align-items: start;
+  color: #fff;
+}
+.footer-top-left {
+  width: 40%;
+  gap: 70px;
+}
+.footer-top-right {
+  width: 40%;
+  padding-right: 96px;
+}
+.footer-card {
+  height: 95px;
+  width: 100%;
+  background-color: #fcd980;
+}
+.footer-card > div {
+  color: #282938;
+}
+.footer-top .social-links {
+  gap: 20px;
+}
+.footer-top .social-link {
+  color: #fff;
+  font-size: 16px;
+}
+.footer-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-header span {
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.footer-header p {
+  color: rgb(244, 246, 252, 0.8);
+}
+
+footer {
+  background-color: #fff;
+}
+footer .container {
+  height: 92px;
+}
+.footer-links {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer span {
+  color: #282938;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+}
+.footer-links a {
+  color: #282938;
+}
+/* FOOTER END */
+
 @media (max-width: 1200px) {
   /* FEATURES START */
   .features-cards {
@@ -385,6 +584,72 @@ nav .container {
     text-align: center;
   }
   /* TESTIMONIALS END */
+
+  /* FAQ START */
+  .faq .container {
+    height: auto;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .faq-header {
+    text-align: center;
+  }
+  .faq-header,
+  .faq-content {
+    width: 100%;
+  }
+  /* FAQ END */
+
+  /* INQUIRY START */
+  .inquiry .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .inquiry-left {
+    display: none;
+  }
+  .inquiry-right {
+    width: 100%;
+  }
+  /* INQUIRY END */
+
+  /* BLOG SRART */
+  .blog-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog-card {
+    width: 100%;
+    gap: 5px;
+  }
+  /* BLOG END */
+
+  /* FOOTER START */
+  .footer-top .container {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 96px;
+  }
+  .footer-top-left,
+  .footer-top-right {
+    width: 100%;
+  }
+  .footer-top-right {
+    padding-right: 0;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .footer-links {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  /* FOOTER END */
 }
 @media (max-width: 600px) {
   /* HERO START */
@@ -417,4 +682,13 @@ nav .container {
     line-height: 16px;
   }
   /* TESTIMONIALS END */
+
+  /* INQUIRY START */
+  .inquiry-right {
+    padding: 20px;
+  }
+  .inquiry-buttons button {
+    padding: 15px;
+  }
+  /* INQUIRY END */
 }
