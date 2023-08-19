@@ -1,0 +1,38 @@
+header {
+  height: 92px;
+}
+.contact .container {
+  width: 100%;
+  padding: 120px 0;
+}
+.contact-header {
+  text-align: center;
+  gap: 16px;
+}
+.contact-header p {
+  width: 50%;
+  opacity: 0.7;
+}
+.contact-header h2,
+.contact-header p {
+  color: #282938;
+}
+.contact-content {
+  width: 100%;
+  height: 640px;
+  border-radius: 12px;
+  background: #f4f6fc;
+  padding: 70px 50px;
+}
+.contact-inputs {
+  justify-content: space-evenly;
+}
+.contact-input {
+  align-items: start;
+  gap: 10px;
+}
+.contact-input input {
+  padding: 13px 10px;
+  padding-right: 50px;
+  align-items: start;
+}

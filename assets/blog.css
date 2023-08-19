@@ -5,6 +5,7 @@ header {
   text-align: center;
 }
 .blog-header .container {
+  width: 100%;
   padding-top: 120px;
   gap: 20px;
   align-items: center;
