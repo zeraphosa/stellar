@@ -31,13 +31,13 @@
     </header>
 
     <div class="contact">
-      <div class="container flex flex-col gap">
+      <div class="container flex flex-col gap align-center">
         <div class="contact-header flex flex-col align-center">
           <h2>Contact Us</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         </div>
-        <div class="contact-content">
-          <div class="contact-inputs flex align-center">
+        <div class="contact-content flex flex-col gap">
+          <div class="contact-inputs flex align-center justify-between">
             <div class="contact-input flex flex-col">
               <label>Name</label>
               <input class="input" type="text" placeholder="Enter your name" />
@@ -47,11 +47,13 @@
               <input class="input" type="text" placeholder="Enter your email" />
             </div>
           </div>
-          <div class="contact-message">
+          <div class="contact-message flex flex-col">
             <label>Message</label>
-            <textarea cols="30" rows="10"></textarea>
+            <textarea cols="30" rows="10" placeholder="Write your  question here"></textarea>
           </div>
-          <div class="contact-btn">Send Message</div>
+          <div class="contactpage-btn">
+            <button class="button sendmessage-btn">Send Message</button>
+          </div>
         </div>
       </div>
     </div>
