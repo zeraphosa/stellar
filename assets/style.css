@@ -33,6 +33,12 @@ nav .container {
   background-color: #fff;
   color: #000;
 }
+.contact-btn a {
+  color: #fff;
+}
+.contact-btn:hover a {
+  color: #000;
+}
 .menu-btn {
   display: none;
   color: #fff;
@@ -68,6 +74,12 @@ nav .container {
 }
 .hero-btn:hover {
   background: transparent;
+  color: #fff;
+}
+.hero-btn a{
+  color: #1b1c2b;
+}
+.hero-btn:hover a{
   color: #fff;
 }
 .hero-img {
