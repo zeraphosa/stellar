@@ -1,0 +1,233 @@
+header {
+  height: 92px;
+}
+/* PRICING START */
+.pricing {
+  background-color: #fff;
+}
+.pricing .container {
+  width: 100%;
+  padding: 120px 0;
+}
+.pricing-header {
+  gap: 16px;
+}
+.pricing-header p {
+  width: 50%;
+  text-align: center;
+}
+.pricing-header h2,
+.pricing-header p {
+  color: #282938;
+}
+.pricing-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pricing-card {
+  width: 30%;
+  height: 700px;
+  border-radius: 12px;
+  padding: 60px 50px;
+  background-color: #f4f6fc;
+  justify-content: space-between;
+}
+.pricing-background {
+  position: relative;
+  background-color: #282938;
+  z-index: 1;
+}
+.pricing-card-overlay {
+  height: 95%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(100% at 50% 0);
+  background-color: rgb(255, 255, 255, 0.06);
+  z-index: -1;
+}
+.pricing-header .price,
+.pricing-header .pricing-text {
+  gap: 8px;
+}
+.pricing-list .icon {
+  color: #97daad;
+  padding-right: 10px;
+}
+.pricing-list .icon-grey {
+  fill: #fc80ad;
+  mix-blend-mode: luminosity;
+}
+.pricing-card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 51px;
+  color: #fff;
+  background: #282938;
+}
+.pricing-card h3,
+.pricing-card p,
+.pricing-card h6,
+.pricing-card span {
+  color: #282938;
+}
+.pricing-header .price p {
+  color: #2405f2;
+}
+
+.pricing-background h3,
+.pricing-background p,
+.pricing-background h6,
+.pricing-background span {
+  color: #fff;
+}
+.pricing-background .pricing-header .price p {
+  color: #fcd980;
+}
+.pricing-background button {
+  background: #fcd980;
+  color: #282938;
+}
+/* PRICING END */
+
+/* CONTACT START */
+.contact .container {
+  width: 100%;
+  padding: 120px 0;
+}
+.contact-header {
+  text-align: center;
+  gap: 16px;
+}
+.contact-header p {
+  width: 60%;
+  opacity: 0.7;
+}
+.contact-header h2,
+.contact-header p {
+  color: #282938;
+}
+.contact-content {
+  width: 80%;
+  height: auto;
+  border-radius: 12px;
+  background: #f4f6fc;
+  padding: 70px 50px;
+}
+.contact-input {
+  align-items: start;
+  gap: 10px;
+  width: 40%;
+}
+.contact-input input {
+  width: 100%;
+  padding: 18px 32px;
+  align-items: start;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.contact-message {
+  gap: 10px;
+}
+.contact-message textarea {
+  width: 100%;
+  padding: 18px 32px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  resize: none;
+}
+.sendmessage-btn {
+  display: flex;
+  padding: 15px 51px;
+  justify-content: center;
+  align-items: center;
+  background: #282938;
+  color: #f4f6fc;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+}
+/* CONTACT END */
+
+/* BLOG START */
+.blog h2 {
+  text-align: center;
+}
+.blog-header .container {
+  width: 100%;
+  padding-top: 120px;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+.blog-header p {
+  width: 80%;
+}
+.blog-header h2,
+.blog-header span,
+.blog-header p,
+.blog-header h3 {
+  color: #282938;
+}
+.blog-header a {
+  color: #2405f2;
+}
+.blog-header img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+.blogpost .container {
+  width: 100%;
+  align-items: start;
+  text-align: justify;
+  gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.blogpost h3 {
+  text-align: start;
+}
+/* BLOG END */
+@media (max-width: 768px) {
+  /* PRICING START */
+  .pricing-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .pricing-card {
+    width: 100%;
+    height: 550px;
+  }
+  /* PRICING END */
+
+  /* CONTACT START */
+  .contact-content {
+    width: 100%;
+    padding: 70px 20px;
+  }
+  .contact-inputs {
+    flex-direction: column;
+  }
+  .contact-input {
+    width: 100%;
+  }
+  .contactpage-btn {
+    display: flex;
+    justify-content: center;
+  }
+  /* CONTACT END */
+
+  /* BLOG START */
+  .blogpost .container {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 20px;
+  }
+  /* BLOG END */
+}
