@@ -69,18 +69,29 @@
 }
 .about-benefits .benefit-cards{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(1, 310px);
+    justify-content: center;
+    gap: 15px;
 }
 .about-benefits .benefit-card{
-    width: 32%;
-    height: 310px;
-    padding: 50px;
+    /* width: 32%; */
+    /* height: 310px; */
+    padding: 50px 40px;
     background-color: #F4F6FC;
-    gap: 16px;
+    gap: 10px;
 }
 .benefit-card i{
     font-size: 25px;
     color: #2405F2;
 }
+@media (max-width: 1200px) {
+    .about-benefits .benefit-cards {
+      grid-template-columns: repeat(2, 40%);
+    }
+  }
+  
 @media (max-width: 768px) {
   .about .container {
     flex-direction: column;
@@ -97,5 +108,8 @@
   .goal-left,
   .goal-right {
     width: 100%;
+  }
+  .about-benefits .benefit-cards {
+    grid-template-columns: repeat(1, 100%);
   }
 }
