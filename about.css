@@ -1,0 +1,101 @@
+.about .container {
+  width: 100%;
+  padding: 120px 0;
+}
+.about-header {
+  width: 50%;
+  gap: 16px;
+}
+.about-header p {
+  width: 80%;
+}
+.about-header-img {
+  width: 40%;
+  height: 330px;
+  background: url("./assets/img/about/about-1.webp"), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about h1,
+.about span,
+.about p {
+  color: #282938;
+}
+.about p {
+  text-align: justify;
+  opacity: 0.7;
+}
+.about-goal .container {
+  background-color: #f4f5f5;
+  width: 100%;
+}
+.about-goal-header-img {
+  width: 100%;
+  height: 340px;
+  background: url("./assets/img/about/about-2.webp"), lightgray 50% / cover no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-goal-header {
+  padding: 80px;
+  width: 100%;
+}
+.goal-left,
+.goal-right {
+  width: 48%;
+  gap: 16px;
+}
+.goal-right {
+  margin-top: 35px;
+}
+.about-goal span,
+.about-goal h3,
+.about-goal p {
+  color: #282938;
+}
+.about-goal p {
+  opacity: 0.7;
+}
+.about-benefits .container{
+    width: 100%;
+    padding: 120px 0;
+}
+.about-benefits h2{
+    width: 55%;
+    text-align: center;
+    color: #282938;
+}
+.about-benefits .benefit-cards{
+    width: 100%;
+}
+.about-benefits .benefit-card{
+    width: 32%;
+    height: 310px;
+    padding: 50px;
+    background-color: #F4F6FC;
+    gap: 16px;
+}
+.benefit-card i{
+    font-size: 25px;
+    color: #2405F2;
+}
+@media (max-width: 768px) {
+  .about .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-header,
+  .about-header-img {
+    width: 100%;
+  }
+  .about-goal-header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .goal-left,
+  .goal-right {
+    width: 100%;
+  }
+}
