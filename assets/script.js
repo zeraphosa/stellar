@@ -27,19 +27,19 @@ const content = [
     text: "Reliable partner. Their expertise propelled our startup to new heights.",
     user: "Emily Lawson",
     title: "Vice President",
-    src: "./assets/img/user-1.png",
+    src: "./assets/img/testimonials/user-1.png",
   },
   {
     text: "Incredible work! Exceeded expectations and boosted our online presence significantly.",
     user: "Sophia Mitchell",
     title: "Developer at Microsoft",
-    src: "./assets/img/user-2.jpg",
+    src: "./assets/img/testimonials/user-2.jpg",
   },
   {
     text: "Impressed by their dedication. Transformed our vision into a stunning reality.",
     user: "Alexander Bennett",
     title: "Specialist",
-    src: "./assets/img/user-3.jpg",
+    src: "./assets/img/testimonials/user-3.jpg",
   },
 ];
 let x = 0;
@@ -118,13 +118,3 @@ function toggle(id) {
 }
 
 faqcontent.innerHTML = faqcode;
-
-// PROJECTS MAPPING & FILTERING
-const data = [
-  {
-    i: "",
-    h: "Template 1",
-    p: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
-    l: "View Portfolio",
-  },
-];
