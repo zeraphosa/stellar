@@ -118,3 +118,13 @@ function toggle(id) {
 }
 
 faqcontent.innerHTML = faqcode;
+
+// PROJECTS MAPPING & FILTERING
+const data = [
+  {
+    i: "",
+    h: "Template 1",
+    p: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+    l: "View Portfolio",
+  },
+];
